@@ -28,6 +28,8 @@ const config: Config = {
             animation: {
                 'pulse-glow': 'pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                 'shine': 'shine 5s linear infinite',
+                'float': 'float 6s ease-in-out infinite',
+                'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
             },
             keyframes: {
                 'pulse-glow': {
@@ -36,6 +38,14 @@ const config: Config = {
                 },
                 'shine': {
                     'to': { backgroundPosition: '200% center' }
+                },
+                'float': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-20px)' },
+                },
+                'fade-in-up': {
+                    '0%': { opacity: '0', transform: 'translateY(20px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
                 }
             }
         },
