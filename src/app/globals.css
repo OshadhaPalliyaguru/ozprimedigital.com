@@ -7,7 +7,7 @@
   --color-background-dark: #050505;
   --color-surface-dark: #111111;
   --color-border-gold: rgba(244, 213, 37, 0.3);
-  
+
   --font-display: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;
 }
@@ -16,13 +16,16 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #050505;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #f4d525;
 }
@@ -37,7 +40,7 @@
 
 @keyframes shine {
   to {
-      background-position: 200% center;
+    background-position: 200% center;
   }
 }
 
